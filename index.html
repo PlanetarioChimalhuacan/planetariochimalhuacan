@@ -3,15 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PD Chima</title>
-    <link rel="icon" href="images/moon.ico">
+    <title>Planetario</title>
+    <link rel="icon" href="https://urieltgc.github.io/images/imgs/img/icons/moon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <iframe src="http://planetariochimal.byethost31.com/" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <script>
-        document.addEventListener("contextmenu", function(e) {
-          e.preventDefault();
-        });
-    </script>
+    
+    <header class="header">
+        <div class="menu">
+           <img class="logo" src="https://urieltgc.github.io/images/imgs/img/icons/Planetario-ofc.svg">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img class="menu-icono" src="https://urieltgc.github.io/images/imgs/img/icons/menu.png">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="logo" href="">Inicio</a></li>
+                    <li><a class="logo" href="#Services">Servicios</a></li>
+                    <li><a class="logo" href="#Contact">Contacto</a></li>
+                    <li><a class="logo" href="main/">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="about container">
+            <div class="about-img">
+                <img class="img" src="https://urieltgc.github.io/images/imgs/img/pages/Back.jpg" alt="background">
+            </div>
+    
+            <div class="about-txt">
+                <h2>Planetario Digital<span> de Chimalhuacán</span></h2>
+                <p>Ubicado en el Cerro Chimalhuache, 
+                    es el segundo más grande de Latinoamérica. <br> Su domo de inmersión digital con 
+                    tecnología 4K y audio 3D te transporta a un viaje por el universo. <br> 
+                    Ofrece proyecciones, talleres y cursos para todas las edades. <br>
+                    Un lugar imperdible para explorar la astronomía y la ciencia.
+                </p>
+                <a href="main/History/" class="btn-1">Ver más</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="services container">
+        <h2 id="Services">Nuestras Salas</h2>
+
+        <div class="services-content">
+            <div class="services-1" style="position: relative;">
+                <div onclick="redirectToPage()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/Stars/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a class="logo" href="rooms/">Cosmonautica</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <div onclick="redirectToPage2()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/Ton618/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a class="logo" href="rooms/index-2.html">Exoplanetas</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <div onclick="redirectToPage3()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/Satelites/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a class="logo" href="rooms/index-3.html">Satelites</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <a href="rooms/index-4.html"><img src="https://urieltgc.github.io/images/imgs/img/icons/Meteoros.png" alt=""></a>
+                <h3><a class="logo" href="rooms/index-4.html">Meteoritos</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <div onclick="redirectToPage5()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/pencil/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a class="logo" href="rooms/index-5.html">Talleres</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <div onclick="redirectToPage6()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/Astrophotograpy/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a href="rooms/index-6.html/" class="logo">Astrofotografias</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <div onclick="redirectToPage7()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/SystemSolar/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a class="logo" href="rooms/index-7.html">Sistema Solar</a></h3>
+            </div>
+
+            <div class="services-1">
+                <a href="rooms/index-8.html"><img src="https://urieltgc.github.io/images/imgs/img/icons/Telescopio.png"></a>
+                <h3><a href="rooms/index-8.html" class="logo">Telescopios</a></h3>
+            </div>
+
+            <div class="services-1" style="position: relative;">
+                <div onclick="play()" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; cursor: pointer; z-index: 1;"></div>
+                <iframe src="repositorios/Planet/" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3><a href="rooms/Funciones/" class="logo">Funcion De Domo</a></h3>
+            </div>
+            
+        </div>
+    </main>
+
+     <!-- Divide la otra seccion-->
+    <section class="general container" id="targetSection">
+        <div class="general-1">
+            <div class="general-card bg-4">
+            </div>
+    
+            <div class="general-card bg-5">
+            </div>
+        
+            <div class="general-card bg-6">     
+            </div>
+        </div>
+        
+        <div class="general-2">
+        
+            <h2>Solar Defender</h2>
+            <p>"Solar Defenders" es un juego de aventuras y acción situado en el sistema solar. 
+                Los jugadores son pilotos espaciales que deben detener la rebelión de los robots 
+                "Los Ravens" y proteger a la humanidad de la destrucción. La misión implica evitar                     que utilicen la Esfera Dyson para acabar con la raza humana.
+            </p>
+            <a href="https://drive.google.com/uc?export=download&id=1jMWILGm742PieC2bY7i-2ZsKAHtN0fsv" class="btn-2">Descargar Juego</a>            
+        </div>               
+    </section>
+    
+
+    <!-- Divide la otra seccion-->
+    <section class="general container">
+        
+        <div class="general-2">
+    
+            <h2>Mapa interactivo</h2>
+            <p>
+                Hemos dieseñado un mapa interactivo con realidad aumentada para que
+                tengas una experiencia similar a la del planetario 
+           </p>
+            <a href="rooms/maps/Maps.html" class="btn-2">Acceder al mapa</a>            
+        </div>
+    
+       <div class="general-1">
+            <div class="general-card bg-1">
+            </div>
+
+            <div class="general-card bg-2">
+            </div>
+    
+            <div class="general-card bg-3">     
+            </div>
+        </div>
+               
+    </section>
+
+    <!--iframe class="comentario" src="repositorios/source/" width="90%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
+
+    <section class="price container">
+        <h2>Lista de Precios</h2>
+        <div class="price-content">
+            <div class="price-1">
+                <p class="pack">Acceso Estudiantes</p>
+                <span>Apartir de 10 niños</span>
+                <h3>$150</h3>
+                <ul>
+                    <li>Acceso a todas las Salas</li>
+                    <li>Acceso a talleres gratuitos</li>
+                    <li>Acceso a funcion de Domo</li>
+                    <li>example 0</li>
+                </ul>
+            </div>
+
+            <div class="price-1 bg-pack">
+                <p class="pack">Acceso Publico <br>General</p>
+                <span class="pack-center">Precio para publico Adulto</span>
+                <h3>$40</h3>
+                <ul>
+                    <li>Acceso a Funcion de domo</li>
+                    <li>Acceso a todas las salas</li>
+                    <li>Recorrido Guiado</li>
+                    <li>Acceso a talleres</li>
+                </ul>
+            </div>
+
+            <div class="price-1">
+                <p class="pack">Acceso Niños y Adultos de la Tercera Edad</p>
+                <span >Descuento del 50% </span>
+                <h3>$20</h3>
+                <ul>
+                    <li>Acceso a Todas las Salas</li>
+                    <li>Acceso a Función de Domo</li>
+                    <li>Recorrido Guiado</li>
+                    <li>Acceso a talleres</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <p class="center-p">Ubicación Del Planetario Digital de Chimalhuacán</p>
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0972434969053!2d-98.96393642427756!3d19.40820394145856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3a5978ca325%3A0x519024480f5b9f39!2sPlanetario%20Digital%20de%20Chimalhuac%C3%A1n!5e0!3m2!1ses-419!2smx!4v1711337004824!5m2!1ses-419!2smx" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--Codigo de la modal-->
+    <div id="appModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¡Descarga nuestro Juego!</h2>
+            <p>Disfruta de una mejor experiencia con nuestra aplicación móvil.</p>
+            <p><br>Disponible solo para dispositivos moviles android.</p>
+            <a href="https://drive.google.com/uc?export=download&id=1jMWILGm742PieC2bY7i-2ZsKAHtN0fsv" class="download-button">Descargar</a>
+        </div>
+    </div>
+    <!--Fin Codigo de la modal-->
+
+    <footer class="footer">
+        <div class="links">
+            <div class="footer-row">
+
+                <div class="footer-links">
+                    <h4><br></h4>
+                    <img id="Contact" class="logo" src="https://urieltgc.github.io/images/imgs/img/icons/Logo_dual.svg">
+                </div>
+
+                 <div class="footer-links">
+                    <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="main/">Acerca del sistema</a></li>
+                            <li><a href="php/sugerencias/">Sugerencias</a></li>
+                            <!--li><a href="main/Politics.html">Politica de privacidad</a></li-->
+                        </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href="https://m.uber.com/ul/?client_id=YOUR_CLIENT_ID&action=setPickup&dropoff[latitude]=19.4082039&dropoff[longitude]=-98.9639364&dropoff[nickname]=Planetario+Digital+de+Chimalhuacan" class="fab fa-uber"></a>
+                        <a href="https://www.facebook.com/Planetario.chimalhuacan.2022/" class="fab fa-facebook-f"></a>
+                        <a href="https://www.tiktok.com/@planetariochimalhuacan?is_from_webapp=1&sender_device=pc" class="fab fa-tiktok"></a>
+                        <a href="https://www.instagram.com/planetariodigitalchima?igsh=enJiazZramI0dnBj" class="fab fa-instagram"></a>
+                       <!-- <a href="https://twitter.com/PlanetChimOfi" class="fab fa-x"></a>-->
+                    </div>
+                </div>
+
+                <div class="link">
+                    <h3>Cuentanos tu experiencia</h3>
+                    <form action="https://formsubmit.co/planetariodigitaldechimalhuaca@gmail.com" method="post">
+                        <input type="text" name="user" placeholder="Nombre" class="inp">
+                        <input type="email" name="email" placeholder="Correo" class="inp">
+                        <textarea class="inp" name="subject"></textarea>
+                        <input class="btn-4" type="submit" name="send" value="Enviar">            
+                        
+                        <input type="hidden" name="_next" value="https://planetariochimalhuacan.github.io/planetariochimalhuacan/">
+                        <!--input type="hidden" name="_captcha" value="false"-->
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="repositorios/source/add.js"></script>
 </body>
 </html>

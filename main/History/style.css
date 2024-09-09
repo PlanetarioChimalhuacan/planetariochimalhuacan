@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Bebas Neue',cursive;
+    background-color: #0e0e1a;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0, 0, 0 ,0.2),
+        rgba(0, 0, 0 ,0.7)
+    ), url(https://urieltgc.github.io/images/imgs/img/pages/history/Back.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #687cef;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-txt span{
+    font-size: 30px;
+    color: #fedab6;
+}
+
+.header-txt h1{
+    font-size: 120px;
+    line-height: 120px;
+    color: #f1f1f1;
+}
+
+.colaboration{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #44444c;
+}
+
+.price-1{
+    height: 170px;
+    width: 300px;
+    border-right: 1px solid #44444c;
+    padding: 20px;
+}
+
+.price-1:last-child{
+    border: 0;
+}
+
+.price-1 p{
+    color: #fff9ed;
+    font-size: 20px;
+}
+
+.price-1 h3{
+    color: #fff9ed;
+    font-size: 30px;
+}
+
+.adventure{
+    padding: 100px 0;
+    text-align: center;
+}
+
+span{
+    color: #fedab6;
+    font-size: 30px;
+}
+
+h2{
+    color: #fff9ed;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.adventure-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.adventure-1 {
+    padding: 25px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure-1 img {
+    width: 170px;
+    margin: -120px 0 30px 0;
+}
+
+.adventure-1 h3 {
+    color: #fff9ed;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 150px;
+}
+
+.bg-1{
+    background-image: url(https://urieltgc.github.io/images/imgs/img/pages/history/HA.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+}
+
+.bg-2{
+    background-image: url(https://urieltgc.github.io/images/imgs/img/pages/history/i2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+}
+
+.bg-3{
+    background-image: url(https://urieltgc.github.io/images/imgs/img/pages/history/i3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #cead65;
+    color: #f1f1f1;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.btn-1:hover{
+    transition: all .5s ease;
+    background-color: #afe77b;
+    color: #0e0e1a;
+}
+
+.general{
+    padding: 100px 0;
+    display: flex;
+}
+
+.general-img{
+    width: 50%;
+    text-align: center;
+}
+
+.general-img img{
+    width: 500px;
+}
+
+.general-txt{
+    width: 50%;
+}
+
+.general-txt p{
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+    font-family: Arial;
+}
+
+.banner{
+    padding: 150px 0;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0 ,0.2),
+        rgba(0, 0, 0 ,0.7)),url(https://urieltgc.github.io/images/imgs/img/pages/history/8-04-2024.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
+.modal-container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 3em 2.5em;
+    display: grid;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal-title{
+    font-size: 2.5rem;
+}
+
+.modal-paragraph{
+    margin-bottom: 10px;
+}
+
+.modal-img{
+    width: 90%;
+    max-width: 300px;
+}
+
+.modal-close{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6500C4;
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal-close:hover{
+    background-color: #29024D;
+    color: #fdfeff;
+}
+
+h2{
+    font-size: 40px;
+    color: #fdfeff;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 17px;
+    color: #797979;
+    margin-bottom: 35px;
+}
+
+.footer{
+    background-color: #01040c;
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;  
+}
+.footer-links h4{
+    font-size: 20px;
+    color:#ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #ff008c; 
+    padding-bottom:10px ;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color:#ffffff;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    COLOR:#fFFFFF;
+    transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: #54005f;
+}
+
+@media(max-width:991px){
+    
+    .menu{
+        padding: 20px;;
+    }
+
+    .menu label{
+        display: flex;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #121140;
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #00c3ff;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-txt h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .price-1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .price-1 p{
+        font-size: 15px;
+    }
+
+    .price-1 h3{
+        font-size: 20px;
+    }
+
+    .adventure{
+        padding: 30px;
+    }
+
+    h2{
+        margin-bottom: 25px;
+        min-height: 20vh;
+    }
+
+    .adventure-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .adventure-1{
+        width: 70%;
+        margin-bottom: 130px;
+    }
+
+    .adventure-1:last-child{
+        margin-bottom: 0;
+    }
+
+    .general{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .general-img{
+        width: 100%;
+        order: 2;
+    }
+
+    .general-img img{
+        width: 100%;
+    }
+
+    .general-txt{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .general-txt p{
+        margin-bottom: 25px;
+    }
+
+    .banner{
+        padding: 30px;
+    }
+
+    .footer-row{
+         text-align: center;
+    }
+
+    .footer-links{
+         width: 100%;
+         margin-bottom: 30px;
+    }
+}
