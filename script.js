@@ -43,10 +43,10 @@ function redirectToPage8() {
     window.location.href = "rooms/index-8.html";
 }
 function redirectToPage10() {
-    window.location.href = "repositorios/Error/";
-}
-function play() {
     window.location.href = "rooms/Funciones/";
+}
+function redirectToPage11() {
+    window.location.href = "repositorios/Error/";
 }
 
 // Codigo de la modal
