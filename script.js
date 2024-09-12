@@ -40,7 +40,7 @@ function redirectToPage7() {
     window.location.href = "rooms/index-7.html";
 }
 function redirectToPage8() {
-    window.location.href = "rooms/index-8.html";
+    window.location.href = "rooms/Funciones/";
 }
 function redirectToPage10() {
     window.location.href = "rooms/Funciones/";
